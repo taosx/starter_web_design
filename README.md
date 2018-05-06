@@ -18,6 +18,8 @@ if you have an opinion please open a new issue.
     - Layout
     - Utility
 
+3. Each block should be self-dependent, no css-reset.
+
 ### File Structure
 
 The file structure takes idea from [bem's flex](https://en.bem.info/methodology/filestructure/#flex) and adds namespacing (in a naive way).

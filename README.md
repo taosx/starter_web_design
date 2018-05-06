@@ -10,17 +10,17 @@ if you have an opinion please open a new issue.
 
 1. We follow *BEMCSS* conventions with syntax modifications.
 
-    block__element--modifier-class_modifier
+    *block__element*--**modifier-class**_modifier
 
 2. We use *namespacing* for making classes more intuitive.
 
-    Component
-    Layout
-    Utility
+    - Component
+    - Layout
+    - Utility
 
 ### File Structure
 
-The file structure takes idea from ![bem's flex](https://en.bem.info/methodology/filestructure/#flex) and adds namespacing (in a naive way).
+The file structure takes idea from [bem's flex](https://en.bem.info/methodology/filestructure/#flex) and adds namespacing (in a naive way).
 
 ```
 project
@@ -64,44 +64,3 @@ project
     │
     └── package.json
 ```
-
-project
-├── common.components
-│   ├── c-body
-│   ├── c-header
-│   │   ├── c-header.css
-│   │   ├── c-header.html
-│   │   ├── c-header.js
-│   │   ├── __menu
-│   │   │   └── c-header__menu.css
-│   │   └── __item
-│   │       └── c-header__item.css
-│   │
-│   ├── c-main
-│   ├── c-footer
-│   ├── l-grid
-│   └── l-container
-│
-├── custom-name.components --rewrite on top common
-│   └── c-header
-│       ├── c-header.css
-│       └── c-header.html
-│
-├── templates
-│   ├── home
-│   │   └── home.html - manually created
-│   └── blog
-│       └── blog.html - manually created
-│
-└── generated
-    ├── index.html
-    ├── common.css
-    ├── home
-    │   ├── home.html
-    │   └── home.css
-    │
-    ├── blog
-    │   ├── blog.html
-    │   └── blog.css
-    │
-    └── package.json
